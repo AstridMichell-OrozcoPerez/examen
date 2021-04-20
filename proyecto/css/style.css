@@ -1,47 +1,56 @@
-
-body{
-	color:purple;
-	background-color: #d8da3d;
+/*--------LAYOUT----------*/
+.main-container{
+	display: flex;
+	width: 1200px;
 }
-
-
-ul.navbar{
+/*--------GENERAL---------*/
+ul{
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	top: 2em;
-	left: 1em;
-	width: 9em; 
 }
-
-ul.navbar li{
-	background: white;
-	margin: 0.5em 0;
-	padding: 0.3em;
-	border-right: 1em solid black }
-ul.navbar a{
-	text-decoration: none; }
-a:link{
-	color: blue }
-a:visited {
-	color: purple }
-
-address {
-	margin-top: 1em;
-	padding-top: 1em;
-	border-top: thin dotted }
-h1{
-
-	font-family: Helvetica,
-	color: blue;
+/*--------ASIDE-----------*/
+aside{
+	background-color: #647087; 
+	width: 30%;
+	margin-right: 3%;
 }
-h2{
-	color:red;
+aside *{
+	color: white;
 }
-h3{
-	color:green;
+aside h2{
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
-h6{
-	color:pinkish;
+aside section h2:first-child{
+	border-bottom: 2px solid white;
+}
+#profile-pic img{
+	border-radius: 50%;
+}
+/*--------MAIN-----------*/
+main section > h2{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.hero{
+	background-color: #EDC0AF;
+}
+.hero h2 {
+	color: white;
+	border-top: 2px solid white;
+	text-transform: none;
+	letter-spacing: normal;
+}
+.about-me{
+	background-color: #F7DDC3;
+}
+.about-me h2{
+	background-color: white;
+}
+article h3,
+article h4 {
+	font-weight: bold;
+}
+/*References*/
+.references{
+	display: flex;
 }
